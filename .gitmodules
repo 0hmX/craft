@@ -1,0 +1,3 @@
+[submodule "submodules/jspython"]
+	path = submodules/jspython
+	url = https://github.com/0hmX/jspython.git
