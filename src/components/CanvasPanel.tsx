@@ -2,29 +2,8 @@ import React from 'react';
 import Canvas from './Canvas'; // Assuming Canvas is in the same dir or adjust path
 import ControlBar from './ControlBar';
 import { type Interpreter } from '../../submodules/jspython/src/interpreter'; // Adjust path as needed
+import { Theme } from '@/lib/theme';
 
-// Define Theme type locally or import if shared
-interface Theme {
-  colors: {
-    panelBg: string;
-    border: string;
-    // Include colors needed by ControlBar
-    secondary: string;
-    textSecondary: string;
-    inputBorder: string;
-    inputBg: string;
-    checkboxAccent: string;
-  };
-  fonts: {
-    // Include fonts needed by ControlBar
-    primary: string;
-  };
-  layout: {
-    // Include layout needed by ControlBar
-    controlBarHeight: string;
-    borderRadius?: string; // Pass down for ControlBar rounding
-  };
-}
 
 interface CanvasPanelProps {
   theme: Theme;
