@@ -126,7 +126,7 @@ interface AppProviderProps {
 // Create the provider component
 export const AppProvider: React.FC<AppProviderProps> = ({ children }) => {
   const [pythonCode, setPythonCode] = useState<string>(DEFAULT_PYTHON_CODE);
-  const [gridSize, setGridSize] = useState<number>(20);
+  const [gridSize, setGridSize] = useState<number>(100);
   const [showGrid, setShowGrid] = useState<boolean>(true);
 
   const value = {
